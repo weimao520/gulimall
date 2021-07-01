@@ -1,0 +1,23 @@
+#spring.application.name=gulimall-third-party
+#spring.cloud.nacos.config.server-addr=127.0.0.1:8848
+#spring.cloud.nacos.config.namespace=4380e303-f736-4fe8-99e9-b5e842506888
+#
+#
+#spring.cloud.nacos.config.ext-config[0].data-id=oss.yml
+#spring.cloud.nacos.config.ext-config[0].group=DEFAULT_GROUP
+#spring.cloud.nacos.config.ext-config[0].refresh=true
+
+spring:
+  application:
+    name: gulimall-third-party
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 20d8b416-2945-42c6-845e-809f2653fa9a
+        ext-config:
+          - data-id : oss.yaml
+            group: DEFAULT_GROUP
+            refresh-enable: true
+            file-extension: yaml
+

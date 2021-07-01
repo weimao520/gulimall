@@ -1,0 +1,31 @@
+#spring.application.name=gulimall-coupon
+#
+#spring.cloud.nacos.config.server-addr=127.0.0.1:8848
+#spring.cloud.nacos.config.namespace=1986f4f3-69e0-43bb-859c-abe427b19f3a
+#spring.cloud.nacos.config.group=prod
+#
+#spring.cloud.nacos.config.ext-config[0].data-id=datasource.yml
+#spring.cloud.nacos.config.ext-config[0].group=dev
+#spring.cloud.nacos.config.ext-config[0].refresh=true
+#
+#spring.cloud.nacos.config.ext-config[1].data-id=mybatis.yml
+#spring.cloud.nacos.config.ext-config[1].group=dev
+#spring.cloud.nacos.config.ext-config[1].refresh=true
+#
+#spring.cloud.nacos.config.ext-config[2].data-id=other.yml
+#spring.cloud.nacos.config.ext-config[2].group=dev
+#spring.cloud.nacos.config.ext-config[2].refresh=true
+
+
+spring:
+  application:
+    name: gulimall-coupon
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        group: dev
+        file-extension: yaml
+        namespace: c814b2cd-3455-4a82-9ba6-2d81b36c6c53
